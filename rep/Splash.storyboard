@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qXM-ho-CPy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="Mx6-mF-wXa">
+            <objects>
+                <viewController id="qXM-ho-CPy" customClass="SplashViewController" customModule="rep" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h4k-sW-ROB"/>
+                        <viewControllerLayoutGuide type="bottom" id="TRm-Do-vY2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kx5-vq-ntB" customClass="GradiantView" customModule="rep" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading! this may take a few seconds..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nj4-jc-9Mx">
+                                <rect key="frame" x="59" y="581" width="246" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="246" id="M8j-30-0t1"/>
+                                    <constraint firstAttribute="height" constant="50" id="nL4-bM-gn5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B2r-rg-9VO">
+                                <rect key="frame" x="77" y="87" width="220" height="173"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rep-white" translatesAutoresizingMaskIntoConstraints="NO" id="TT6-ty-uTH">
+                                <rect key="frame" x="90" y="291.5" width="195" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="NMy-Oc-H9t"/>
+                                    <constraint firstAttribute="width" constant="195" id="asG-dE-TSy"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="rep"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="B2r-rg-9VO" firstAttribute="leading" secondItem="kx5-vq-ntB" secondAttribute="leadingMargin" constant="61" id="7RE-Et-Mwm"/>
+                            <constraint firstItem="Nj4-jc-9Mx" firstAttribute="leading" secondItem="kx5-vq-ntB" secondAttribute="leadingMargin" constant="43" id="DXn-xP-gbq"/>
+                            <constraint firstItem="B2r-rg-9VO" firstAttribute="centerX" secondItem="kx5-vq-ntB" secondAttribute="centerX" constant="-0.5" id="aw7-JO-Tzr"/>
+                            <constraint firstItem="TT6-ty-uTH" firstAttribute="centerX" secondItem="kx5-vq-ntB" secondAttribute="centerX" id="efP-kf-mAt"/>
+                            <constraint firstItem="TT6-ty-uTH" firstAttribute="centerY" secondItem="kx5-vq-ntB" secondAttribute="centerY" id="fi1-uv-SdK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nj4-jc-9Mx" secondAttribute="trailing" constant="54" id="r9z-hL-Aai"/>
+                            <constraint firstItem="B2r-rg-9VO" firstAttribute="centerY" secondItem="kx5-vq-ntB" secondAttribute="centerY" constant="-160" id="rMy-NK-rvb"/>
+                            <constraint firstItem="B2r-rg-9VO" firstAttribute="top" secondItem="h4k-sW-ROB" secondAttribute="bottom" constant="67" id="tat-jQ-7tQ"/>
+                            <constraint firstItem="TRm-Do-vY2" firstAttribute="top" secondItem="Nj4-jc-9Mx" secondAttribute="bottom" constant="36" id="x4U-JE-2op"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" red="0.031372549020000001" green="0.20784313730000001" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="lottieView" destination="B2r-rg-9VO" id="aze-H0-oDj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XAg-Kz-2Uy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2.3999999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Rep-white" width="191" height="79"/>
+    </resources>
+</document>
